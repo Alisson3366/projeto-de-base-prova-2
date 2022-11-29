@@ -39,3 +39,16 @@ function listarPorCategoria(category) {
 
 // listarPorCategoria('Eletrônico');
 // listarPorCategoria('Escolar');
+
+function listarPorValor(min, max) {
+	produtos.forEach((produto) => {
+		if (produto.valor >= min && produto.valor <= max) {
+			console.log(produto);
+		}
+	});
+}
+
+// listarPorValor(6, 10);
+// listarPorValor(997, 1500);
+// listarPorValor(1997, 2000);
+// listarPorValor(0, 1);
