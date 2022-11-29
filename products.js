@@ -29,6 +29,17 @@ function listar() {
 	});
 }
 
+function listarPorCategoria(category) {
+	produtos.forEach((produto) => {
+		if (produto.categoria === category) {
+			console.log(produto);
+		}
+	});
+}
+
+// listarPorCategoria('Eletrônico');
+// listarPorCategoria('Escolar');
+
 function listarPorValor(min, max) {
 	produtos.forEach((produto) => {
 		if (produto.valor >= min && produto.valor <= max) {
